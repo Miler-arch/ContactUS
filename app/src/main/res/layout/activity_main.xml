@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ED5CF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="379dp"
+        android:layout_height="671dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:text="Contact us"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail:" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress4"
+            android:layout_width="355dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone:" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="355dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message:" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="355dp"
+            android:layout_height="193dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="Send a copy yourself" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="Subscribe to our newsletter" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:background="#FF9800"
+            android:text="Send" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(*Required Fields.)" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
